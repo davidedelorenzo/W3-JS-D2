@@ -117,18 +117,27 @@
       */
 
     const changeUrls = function () {
+    let newAnchorChange = document.getElementsByTagName('a')[0]
 
-
+    newAnchorChange.setAttribute('href', 'https://www.google.com')
     }
+
+    changeUrls()
+
 
     /* ESERCIZIO 5
        Scrivi una funzione che aggiunga un nuovo elemento lista alla seconda lista non ordinata
     */
 
     const addToTheSecond = function () {
-
-
+    let newListElement = document.getElementById('secondList')
+    
+    let newLi = document.createElement('li')
+    newLi.innerText = '4th'
+    newListElement.appendChild(newLi)
     }
+
+    addToTheSecond()
 
     /* ESERCIZIO 6
        Scrivi una funzione che aggiunga un secondo paragrafo al primo div
