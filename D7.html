@@ -103,10 +103,11 @@
        Scrivi una funzione per che cambi il testo dei p figli di un div
       */
 
-    /*const changePcontent = function () {
-    let changeDivChildrens = document.querySelector('div' 'p')
-
-    changeDivChildrens.innerText = 'Testo dei p figli di div cambiato!'
+    const changePcontent = function () {
+    let pChildrensOfDiv = document.querySelectorAll('div p')
+    pChildrensOfDiv.forEach(p => {
+      p.innerText = 'Testo dei p figli di div cambiato! (ESERCIZIO 3)'
+    })
     }
 
     changePcontent()
